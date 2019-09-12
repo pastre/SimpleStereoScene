@@ -2,7 +2,7 @@ Pod::Spec.new do |s|
 
 # 1
 s.platform = :ios
-s.ios.deployment_target = '8.0'
+s.ios.deployment_target = '10.0'
 s.name = "SimpleStereoScene"
 s.summary = "SimpleStereoScene creates and attaches a stereographic scnscne to a view"
 s.requires_arc = true
