@@ -2,13 +2,13 @@ Pod::Spec.new do |s|
 
 # 1
 s.platform = :ios
-s.ios.deployment_target = '12.0'
+s.ios.deployment_target = '8.0'
 s.name = "SimpleStereoScene"
 s.summary = "SimpleStereoScene creates and attaches a stereographic scnscne to a view"
 s.requires_arc = true
 
 # 2
-s.version = "0.1.0"
+s.version = "0.2.0"
 
 # 3
 s.license = { :type => "MIT", :file => "LICENSE" }
@@ -32,7 +32,7 @@ s.framework = "CoreMotion"
 s.source_files = "SimpleStereoScene/**/*.{swift}"
 
 # 9
-s.resources = "SimpleStereoScene/**/*.{png,jpeg,jpg,storyboard,xib,xcassets}"
+#s.resources = "SimpleStereoScene/**/*.{png,jpeg,jpg,storyboard,xib,xcassets}"
 
 # 10
 s.swift_version = "5.0"
