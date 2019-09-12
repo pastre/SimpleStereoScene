@@ -5,6 +5,9 @@
       location = "group:README.md">
    </FileRef>
    <FileRef
+      location = "group:SimpleStereoScene.podspec">
+   </FileRef>
+   <FileRef
       location = "group:SimpleStereoScene.xcodeproj">
    </FileRef>
    <FileRef
