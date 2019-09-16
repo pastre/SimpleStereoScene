@@ -7,7 +7,7 @@ enum StereoEye {
     case left, right
 }
 
-class VRSceneGenerator: NSObject, GyroTrackerDelegate {
+public class VRSceneGenerator: NSObject, GyroTrackerDelegate {
     func updatedTransform(_ transform: matrix_float4x4, imagePixelBuffer: CVPixelBuffer) {
         
     }
@@ -37,11 +37,11 @@ class VRSceneGenerator: NSObject, GyroTrackerDelegate {
     var rightView: SCNView?
     var cameraLeftNode: SCNNode?
     var cameraRightNode: SCNNode?
-    var headNode: SCNNode?
+    public var headNode: SCNNode?
     
     var imageContext = CIContext(options: nil)
     
-    override init() {
+    public override init() {
         super.init()
         self.gyroTracker = GyroTracker()
 //        self.runner = VRTracker()
@@ -50,7 +50,7 @@ class VRSceneGenerator: NSObject, GyroTrackerDelegate {
 //        runner.delegate = self
     }
     
-    func attachStereoView(on view: UIView, with scene: SCNScene) {
+    public func attachStereoView(on view: UIView, with scene: SCNScene) {
 
         leftView = SCNView()
         rightView = SCNView()
